@@ -1,7 +1,6 @@
 # 스택
 import sys
 
-# 스택
 input = sys.stdin.readline
 n = int(input())
 stack = []
@@ -16,4 +15,5 @@ for i in range(n):
     elif s[0] == 'empty':
         print(1 if len(stack) == 0 else 0)
     elif s[0] == 'top':
+        # 마지막 값을 확인 할 때 그냥 stack[-1]도 가능하다.
         print(stack[len(stack) - 1] if len(stack) != 0 else -1)
